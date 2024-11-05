@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit.Mvvm", "Toolkit.Mvvm\Toolkit.Mvvm.csproj", "{FA0285AC-31EF-4785-92AB-CD3E65D9E7E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Toolkit.Mvvm", "src\Toolkit.Mvvm\Toolkit.Mvvm.csproj", "{447E9869-EE82-42D5-AB38-80A2BC1209CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FA0285AC-31EF-4785-92AB-CD3E65D9E7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA0285AC-31EF-4785-92AB-CD3E65D9E7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA0285AC-31EF-4785-92AB-CD3E65D9E7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA0285AC-31EF-4785-92AB-CD3E65D9E7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447E9869-EE82-42D5-AB38-80A2BC1209CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447E9869-EE82-42D5-AB38-80A2BC1209CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447E9869-EE82-42D5-AB38-80A2BC1209CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447E9869-EE82-42D5-AB38-80A2BC1209CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
