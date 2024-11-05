@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 using System.Windows.Data;
-using System.Workflow.ComponentModel.Serialization;
+using System.Windows.Markup;
 
 namespace Toolkit.Mvvm.Infrastructure.Converters.Base
 {

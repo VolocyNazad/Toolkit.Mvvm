@@ -1,5 +1,5 @@
 ﻿using System.Windows.Input;
-using System.Workflow.ComponentModel.Serialization;
+using System.Windows.Markup;
 
 namespace Toolkit.Mvvm.Infrastructure.Commands.Base
 {
