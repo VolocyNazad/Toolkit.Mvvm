@@ -9,7 +9,7 @@ namespace Toolkit.Mvvm.ViewModels.Base
             public readonly bool Result;
             public readonly T? OldValue;
             public readonly T? NewValue;
-            private readonly string PropertyName;
+            public readonly string PropertyName;
             public readonly Action<string> OnPropertyChanged;
 
             internal SetValueResult(bool result, T? oldValue, T? newValue, string propertyName, Action<string> onPropertyChanged)
