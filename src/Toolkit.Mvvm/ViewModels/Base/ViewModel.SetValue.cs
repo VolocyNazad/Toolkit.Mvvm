@@ -306,6 +306,17 @@ namespace Toolkit.Mvvm.ViewModels.Base
             }
         }
 
+        protected SetValueResult<T> NoisySetValue<T>(ref T field, T value, [CallerMemberName] string propertyName = null!)
+        {
+            if (Equals(field, value))
+                return new SetValueResult<T>(false, field, value, propertyName, RaisePropertyChanged);
+
+            var oldValue = field;
+            field = value;
+            RaiseNoisyPropertyChanged(propertyName);
+
+            return new SetValueResult<T>(true, oldValue, value, propertyName, RaisePropertyChanged);
+        }
         protected SetValueResult<T> SetValue<T>(ref T field, T value, [CallerMemberName] string propertyName = null!)
         {
             if (Equals(field, value))
