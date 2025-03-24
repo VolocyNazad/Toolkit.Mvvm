@@ -317,7 +317,6 @@ namespace Toolkit.Mvvm.ViewModels.Base
 
             return new SetValueResult<T>(true, oldValue, value, propertyName, RaisePropertyChanged);
         }
-
         protected SetValueResult<T> NoisySetValue<T>(ref T field, T value, [CallerMemberName] string propertyName = null!)
         {
             if (Equals(field, value))
@@ -353,7 +352,6 @@ namespace Toolkit.Mvvm.ViewModels.Base
 
             return new SetValueResult<T>(true, oldValue, value, propertyName, RaisePropertyChanged);
         }
-
         protected SetValueResult<T> SetValueIf<T>(ref T field, T value, Func<bool> valueChecker, [CallerMemberName] string propertyName = null!)
         {
             if (Equals(field, value) || valueChecker() == false)

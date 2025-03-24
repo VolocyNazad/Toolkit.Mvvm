@@ -6,9 +6,9 @@
 	  <LangVersion>12.0</LangVersion>
 	  <Nullable>enable</Nullable>
 	  <PackageId>VolocyNazad.$(AssemblyName)</PackageId>
-	  <AssemblyVersion>1.0.5</AssemblyVersion>
-	  <FileVersion>1.0.5</FileVersion>
-	  <Version>1.0.5</Version>
+	  <AssemblyVersion>1.0.6</AssemblyVersion>
+	  <FileVersion>1.0.6</FileVersion>
+	  <Version>1.0.6</Version>
 	  <PackageTags>Wpf;Mvvm</PackageTags>
 	  <Authors>VolocyNazad</Authors>
 	  <Company>VolocyNazad</Company>
@@ -17,13 +17,13 @@
 	<ItemGroup Condition="'$(TargetFramework)' == 'net48'">
 
 		<!-- PolySharp - the superhero that brings modern C# features to legacy frameworks -->
-		<PackageReference Include="PolySharp" Version="1.14.1">
+		<PackageReference Include="PolySharp" Version="1.15.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 
 		<!-- For when you want to Span all the things -->
-		<PackageReference Include="System.Memory" Version="4.5.4" />
+		<PackageReference Include="System.Memory" Version="4.6.2" />
 		
 	</ItemGroup>
 

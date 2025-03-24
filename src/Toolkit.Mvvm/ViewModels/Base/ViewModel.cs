@@ -4,7 +4,6 @@ using System.Windows.Threading;
 
 namespace Toolkit.Mvvm.ViewModels.Base
 {
-
     public abstract partial class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
