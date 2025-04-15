@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
+	  <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <LangVersion>12.0</LangVersion>
 	  <Nullable>enable</Nullable>
@@ -14,10 +14,6 @@
 	  <Company>VolocyNazad</Company>
 	  <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
-		
-	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0-windows'">
 
