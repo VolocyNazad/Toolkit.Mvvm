@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>net48</TargetFrameworks>
+	  <TargetFrameworks>net48;net8.0-windows;net9.0-windows</TargetFrameworks>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <LangVersion>12.0</LangVersion>
 	  <Nullable>enable</Nullable>
@@ -12,7 +12,16 @@
 	  <PackageTags>Wpf;Mvvm</PackageTags>
 	  <Authors>VolocyNazad</Authors>
 	  <Company>VolocyNazad</Company>
+	  <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+		
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0-windows'">
+
+	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net48'">
 
@@ -25,13 +34,6 @@
 		<!-- For when you want to Span all the things -->
 		<PackageReference Include="System.Memory" Version="4.6.2" />
 		
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Reference Include="PresentationCore" />
-	  <Reference Include="PresentationFramework" />
-	  <Reference Include="System.Xaml" />
-	  <Reference Include="WindowsBase" />
 	</ItemGroup>
 
 </Project>
