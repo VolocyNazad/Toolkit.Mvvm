@@ -34,8 +34,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: | 
-          8.0.x
+        dotnet-version:
           9.0.x
 
     # Create the NuGet package in the folder from the environment variable NuGetDirectory
@@ -78,6 +77,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
+      with:
+        dotnet-version:
+          9.0.x
       uses: actions/setup-dotnet@v4
     - name: Run tests
       run: dotnet test --configuration Release
@@ -101,8 +103,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: | 
-            8.0.x
+          dotnet-version:
             9.0.x
 
       # Publish all NuGet packages to NuGet.org
