@@ -13,6 +13,7 @@
 	  <Authors>VolocyNazad</Authors>
 	  <Company>VolocyNazad</Company>
 	  <UseWPF>true</UseWPF>
+	  <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0-windows'">
